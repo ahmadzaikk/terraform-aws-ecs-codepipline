@@ -28,3 +28,9 @@ variable "container_port" {
 variable "memory_reserv" {
   default = 212
 }
+
+variable "sse_algorithm" {
+  type        = string
+  default     = "AES256"
+  description = "The server-side encryption algorithm to use. Valid values are `AES256` and `aws:kms`"
+}
